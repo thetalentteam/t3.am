@@ -1,0 +1,92 @@
+@import 'normalize';
+@import 'skeleton';
+
+// COLORS
+
+$black: rgb(12, 12, 14);
+$blackAlt: rgb(45, 48, 52);
+$brown: rgb(108, 109, 109);
+$brownAlt: rgb(136, 128, 120);
+$orange: rgb(214, 167, 131);
+$orangeAlt: rgb(226, 229, 202);
+$white: rgb(255, 255, 255);
+$whiteAlt: rgb(240, 241, 234);
+$teal: rgb(25, 115, 150);
+$tealAlt: rgb(77, 188, 208);
+$blue: rgb(28, 106, 162);
+$blueAlt: rgb(71, 133, 197);
+$green: rgb(0, 191, 140);
+$greenAlt: rgb(69, 204, 156);
+$pastelGreen: rgb(144, 212, 182);
+$pastelGreenAlt: rgb(219, 235, 234);
+
+// TYPE
+
+@font-face {
+  font-family: avenir;
+  src: font-url('AvenirLTStd-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: engravers;
+  src: font-url('EngravrsRomanBdBT-Bold.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: walsheim;
+  src: font-url('GTWalsheim-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: idlewild;
+  src: font-url('Idlewild-Medium.woff') format('woff');
+}
+
+// STYLES
+
+nav.primary {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  margin-top: 40px;
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    background: image-url('logo.svg') no-repeat center center;
+  }
+
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.20) 60%, rgba(0, 0, 0, 0.65) 100%), image-url('bg/hero.jpg') center center;
+  background-size: cover;
+  background-color: $black;
+  text-align: center;
+  height: 100vh;
+
+  h1 {
+    font: 64px/66px walsheim;
+    color: $white;
+    background-color: $blue;
+    display: inline-block;
+    padding: 10px 20px 22px 20px;
+  }
+
+  p {
+    font: 48px/60px walsheim;
+    color: $white;
+    margin: 75px 0px 0px 0px;
+  }
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
