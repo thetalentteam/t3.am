@@ -45,8 +45,25 @@ $pastelGreenAlt: rgb(219, 235, 234);
 
 // STYLES
 
-nav.primary {
+.jumbo {
+  font: 60px/80px walsheim;
+}
+
+.vhcenter {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vcenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav.primary {
+  position: fixed;
   width: 100%;
   z-index: 2;
   margin-top: 40px;
@@ -82,10 +99,29 @@ nav.primary {
   }
 
   .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @extend .vhcenter;
+  }
+
+}
+
+.global {
+  position: relative;
+  height: 100vh;
+  background: image-url('bg/global.jpg') center center;
+  background-size: cover;
+
+  .countries ul li {
+    font: 36px/60px engravers;
+    text-align: right;
+    list-style-type: none;
+  }
+
+  .jumbo {
+    color: $teal;
+  }
+
+  .container {
+    @extend .vhcenter;
   }
 
 }
