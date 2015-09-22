@@ -19,6 +19,7 @@ $green: rgb(0, 191, 140);
 $greenAlt: rgb(69, 204, 156);
 $pastelGreen: rgb(144, 212, 182);
 $pastelGreenAlt: rgb(219, 235, 234);
+$yellow: rgb(255, 202, 4);
 
 // TYPE
 
@@ -58,6 +59,7 @@ h2 {
   text-align: center;
   letter-spacing: 20px;
   margin-top: 200px;
+  margin-left: 18px; // manually correct for kerning
 }
 
 hr {
@@ -96,7 +98,8 @@ nav.primary {
 
 }
 
-.hero, .global, .clients, .aligned-incentives, .technology-enabled {
+.hero, .global, .clients, .aligned-incentives, .technology-enabled, .iaas,
+.talent-engagement, .studio, .assessment-tools {
   position: relative;
   height: 100vh;
 }
@@ -201,6 +204,50 @@ nav.primary {
 
   .box {
     background-color: rgba(0, 13, 31, 0.7);
+  }
+}
+
+.iaas {
+  background: image-url('bg/iaas.jpg') center center / cover;
+  color: $black;
+
+  hr {
+    background-color: $yellow;
+  }
+
+  .box {
+    background: image-url('patterns/waves.png') center center / cover;
+  }
+}
+
+.talent-engagement {
+  background: image-url('bg/talent-engagement.jpg') center center / cover;
+  color: $white;
+
+  hr {
+    background-color: $greenAlt;
+  }
+
+  .box {
+    background-color: rgba(0, 81, 58, 0.7);
+  }
+}
+
+.studio {
+  background: image-url('bg/studio.jpg') center center / cover;
+  color: $black;
+
+  hr {
+    background-color: $tealAlt;
+  }
+}
+
+.assessment-tools {
+  background: image-url('bg/assessment-tools.jpg') center center / cover;
+  color: $white;
+
+  hr {
+    background-color: $greenAlt;
   }
 }
 
