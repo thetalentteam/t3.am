@@ -46,11 +46,9 @@ $yellow: rgb(255, 202, 4);
 
 // STYLES
 
-.jumbo {
-  font: 48px/60px walsheim;
-  text-align: justify;
-  margin-top: 33px;
-  margin-bottom: 33px;
+h1 {
+  font: 60px/80px walsheim;
+  color: $white;
 }
 
 h2 {
@@ -69,6 +67,26 @@ hr {
   margin-bottom: 0px;
   border: none;
   background-color: $orange;
+}
+
+.jumbo {
+  font: 48px/60px walsheim;
+  text-align: justify;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.button {
+  width: 380px;
+  height: 80px;
+  border-radius: 40px;
+  font: 48px/80px walsheim;
+  color: $black;
+  background-color: $yellow;
+  border: none;
+  text-transform: none;
+  text-align: center;
+  letter-spacing: -3px;
 }
 
 .vhcenter {
@@ -99,7 +117,7 @@ nav.primary {
 }
 
 .hero, .global, .clients, .aligned-incentives, .technology-enabled, .iaas,
-.talent-engagement, .studio, .assessment-tools {
+.talent-engagement, .studio, .assessment-tools, .testimonials, .join {
   position: relative;
   height: 100vh;
 }
@@ -110,8 +128,6 @@ nav.primary {
   text-align: center;
 
   h1 {
-    font: 60px/80px walsheim;
-    color: $white;
     background-color: $blue;
     display: inline-block;
     padding: 10px 20px 22px 20px;
@@ -248,6 +264,82 @@ nav.primary {
 
   hr {
     background-color: $greenAlt;
+  }
+}
+
+.testimonials {
+
+  .quotor {
+    font: 36px/40px walsheim;
+  }
+
+  .quote {
+    font: 60px/80px walsheim;
+    color: $white;
+  }
+
+  .olson {
+    height: 50vh;
+    background: image-url('bg/olson.jpg') center center / cover;
+
+    .quotor {
+      color: $tealAlt;
+    }
+  }
+
+  .huang {
+    height: 50vh;
+    background: image-url('bg/huang.jpg') center center / cover;
+
+    .quotor {
+      text-align: right;
+      color: $greenAlt;
+    }
+  }
+
+}
+
+.join {
+  background: image-url('bg/join.jpg') center center / cover;
+  text-align: center;
+
+  .container {
+    @extend .vhcenter;
+  }
+
+  h1 {
+    margin-bottom: 80px;
+  }
+
+  .company {
+    margin-right: 40px;
+  }
+
+  .talent {
+    background-color: $greenAlt;
+  }
+
+  .footer {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+
+    a {
+      color: $pastelGreenAlt;
+      opacity: 0.5;
+      font: 18px/25px avenir;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .copyright {
+      margin-top: 50px;
+      font: 8px/10px idlewild;
+      color: $white;
+      opacity: 0.5;
+    }
   }
 }
 
