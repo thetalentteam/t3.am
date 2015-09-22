@@ -46,7 +46,23 @@ $pastelGreenAlt: rgb(219, 235, 234);
 // STYLES
 
 .jumbo {
-  font: 60px/80px walsheim;
+  font: 48px/60px walsheim;
+}
+
+h2 {
+  font: 48px/50px engravers;
+  text-transform: lowercase;
+  letter-spacing: 20px;
+  margin-top: 200px;
+}
+
+hr {
+  width: 240px;
+  height: 20px;
+  margin-top: 100px;
+  margin-bottom: 33px;
+  border: none;
+  background-color: $orange;
 }
 
 .vhcenter {
@@ -76,16 +92,18 @@ nav.primary {
 
 }
 
-.hero {
+.hero, .global, .clients {
   position: relative;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.20) 60%, rgba(0, 0, 0, 0.65) 100%), image-url('bg/hero.jpg') center center;
-  background-size: cover;
+  height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.20) 60%, rgba(0, 0, 0, 0.65) 100%), image-url('bg/hero.jpg') center center / cover;
   background-color: $black;
   text-align: center;
-  height: 100vh;
 
   h1 {
-    font: 64px/66px walsheim;
+    font: 60px/80px walsheim;
     color: $white;
     background-color: $blue;
     display: inline-block;
@@ -105,10 +123,7 @@ nav.primary {
 }
 
 .global {
-  position: relative;
-  height: 100vh;
-  background: image-url('bg/global.jpg') center center;
-  background-size: cover;
+  background: image-url('bg/global.jpg') center center / cover;
 
   .countries ul li {
     font: 36px/60px engravers;
@@ -117,6 +132,7 @@ nav.primary {
   }
 
   .jumbo {
+    font: 60px/80px walsheim;
     color: $teal;
   }
 
@@ -126,3 +142,36 @@ nav.primary {
 
 }
 
+.clients {
+  background: image-url('bg/clients.jpg') center center / cover;
+  text-align: center;
+  color: $white;
+
+  .client-grid {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font: 18px/40px idlewild;
+
+    .box {
+      border: 8px solid $brown;
+      margin: 48px;
+
+      &:before {
+        content: " ";
+        position: absolute;
+        //z-index: 1;
+        top: 68px;
+        left: 68px;
+        right: 68px;
+        bottom: 68px;
+        border: 2px solid $brown;
+      }
+    }
+
+    .row {
+      margin-top: 22px;
+      margin-bottom: 17px;
+    }
+  }
+}
