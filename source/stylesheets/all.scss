@@ -48,6 +48,8 @@ $pastelGreenAlt: rgb(219, 235, 234);
 .jumbo {
   font: 48px/60px walsheim;
   text-align: justify;
+  margin-top: 33px;
+  margin-bottom: 33px;
 }
 
 h2 {
@@ -62,7 +64,7 @@ hr {
   width: 240px;
   height: 20px;
   margin-top: 100px;
-  margin-bottom: 33px;
+  margin-bottom: 0px;
   border: none;
   background-color: $orange;
 }
@@ -94,7 +96,7 @@ nav.primary {
 
 }
 
-.hero, .global, .clients, .aligned-incentives {
+.hero, .global, .clients, .aligned-incentives, .technology-enabled {
   position: relative;
   height: 100vh;
 }
@@ -137,6 +139,8 @@ nav.primary {
     font: 60px/80px walsheim;
     color: $teal;
     text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .container {
@@ -179,11 +183,24 @@ nav.primary {
 }
 
 .aligned-incentives {
-  background: image-url('bg/aligned-incentives.jpg');
+  background: image-url('bg/aligned-incentives.jpg') center center / cover;
   color: $white;
 
   hr {
     background-color: $black;
+  }
+}
+
+.technology-enabled {
+  background: image-url('bg/technology-enabled.jpg') center center / cover;
+  color: $white;
+
+  hr {
+    background-color: $teal;
+  }
+
+  .box {
+    background-color: rgba(0, 13, 31, 0.7);
   }
 }
 
