@@ -47,17 +47,26 @@ $yellow: rgb(255, 202, 4);
 // STYLES
 
 h1 {
-  font: 60px/80px walsheim;
+  font: 40px/60px walsheim;
   color: $white;
+
+  @media (min-width: 550px) and (min-height: 667px)  {
+    font: 60px/80px walsheim;
+  }
 }
 
 h2 {
-  font: 48px/50px engravers;
+  font: 27px/40px engravers;
   text-transform: lowercase;
   text-align: center;
-  letter-spacing: 20px;
-  margin-top: 200px;
-  margin-left: 18px; // manually correct for kerning
+  letter-spacing: 10px;
+  margin-top: 100px;
+  margin-left: 18px; // manually correct trailing artifact
+
+  @media (min-width: 550px) and (min-height: 667px)  {
+    font: 48px/50px engravers;
+    letter-spacing: 20px;
+  }
 }
 
 hr {
@@ -70,36 +79,65 @@ hr {
 }
 
 .jumbo {
-  font: 48px/60px walsheim;
-  text-align: justify;
+  font: 21px/30px walsheim;
   margin-top: 33px;
   margin-bottom: 33px;
+  text-align: center;
+
+  @media (min-width: 667px) {
+    text-align: justify;
+  }
+
+  @media (min-width: 380px) {
+    font: 27px/40px walsheim;
+  }
+
+  @media (min-width: 900px) and (min-height: 720px)  {
+    font: 48px/60px walsheim;
+  }
 }
 
 .button {
-  width: 380px;
-  height: 80px;
+  font: 27px/40px walsheim;
+  width: 240px;
+  height: 40px;
   border-radius: 40px;
-  font: 48px/80px walsheim;
   color: $black;
   background-color: $yellow;
   border: none;
   text-transform: none;
   text-align: center;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
+
+  @media (min-width: 550px) and (min-height: 667px)  {
+    font: 48px/80px walsheim;
+    letter-spacing: -3px;
+    width: 380px;
+    height: 80px;
+  }
 }
 
-.vhcenter {
+.box {
+  margin-bottom: 33px;
+
+  
+}
+
+@mixin vhcenter() {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.vcenter {
+@mixin vcenter {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.vcenter {
+  @include vcenter();
 }
 
 nav.primary {
@@ -119,7 +157,11 @@ nav.primary {
 .hero, .global, .clients, .aligned-incentives, .technology-enabled, .iaas,
 .talent-engagement, .studio, .assessment-tools, .testimonials, .join {
   position: relative;
-  height: 100vh;
+  min-height: 667px;
+
+  @media (min-width: 667px) {
+    height: 100vh;
+  }
 }
 
 .hero {
@@ -134,37 +176,57 @@ nav.primary {
   }
 
   p {
-    font: 48px/60px walsheim;
+    font: 27px/40px walsheim;
     color: $white;
     margin: 75px 0px 0px 0px;
+
+    @media (min-width: 550px) and (min-height: 667px)  {
+      font: 48px/60px walsheim;
+    }
   }
 
   .container {
-    @extend .vhcenter;
+    @include vhcenter();
   }
 
 }
 
 .global {
   background: image-url('bg/global.jpg') center center / cover;
+  overflow: hidden;
 
   .countries ul li {
-    font: 36px/60px engravers;
+    display: none;
+    font: 27px/40px engravers;
     text-align: right;
     list-style-type: none;
+    opacity: 0.3;
+
+    @media (min-width: 550px) {
+      opacity: 1.0;
+      display: block;
+    }
+
+    @media (min-height: 800px) {
+      font: 36px/60px engravers;
+    }
   }
 
   .jumbo {
-    font: 60px/80px walsheim;
+    font: 40px/60px walsheim;
     color: $teal;
     text-align: left;
     margin-top: 0px;
     margin-bottom: 0px;
+
+    @media (min-width: 667px)  {
+      font: 60px/80px walsheim;
+    }
   }
 
-  .container {
-    @extend .vhcenter;
-  }
+    .container {
+      @include vhcenter();
+    }
 
 }
 
@@ -174,24 +236,46 @@ nav.primary {
   color: $white;
 
   .client-grid {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    font: 18px/40px idlewild;
+    font: 10px/25px idlewild;
+
+    .first.row {
+      margin-bottom: 0px;
+    }
+
+    .second.row {
+      margin-top: 0px;
+    }
+
+    @media (min-width: 550px) {
+      position: absolute;
+      bottom: 0;
+
+      .first.row {
+        margin-bottom: 17px;
+      }
+      .second.row {
+        margin-top: 22px;
+      }
+    }
+
+    @media (min-width: 820px) {
+      font: 14px/30px idlewild;
+    }
+
+    @media (min-width: 1000px) {
+      font: 18px/40px idlewild;
+    }
 
     .box {
       border: 8px solid $brown;
       margin: 48px;
-
-      &:before {
-        content: " ";
-        position: absolute;
-        top: 68px;
-        left: 68px;
-        right: 68px;
-        bottom: 68px;
-        border: 2px solid $brown;
-      }
     }
 
     .row {
@@ -268,32 +352,96 @@ nav.primary {
 }
 
 .testimonials {
+  min-height: 0;
 
   .quotor {
-    font: 36px/40px walsheim;
+    font: 21px/30px walsheim;
+
+    @media (min-width: 667px) {
+      font: 27px/35px walsheim;
+    }
+
+    @media (min-width: 900px) and (min-height: 720px)  {
+      font: 36px/40px walsheim;
+    }
   }
 
   .quote {
-    font: 60px/80px walsheim;
+    font: 27px/40px walsheim;
     color: $white;
+
+    @media (min-width: 800px) {
+      font: 40px/60px walsheim;
+    }
+
+    @media (min-width: 900px) and (min-height: 720px)  {
+      font: 50px/75px walsheim;
+    }
+  }
+
+  .olson, .huang {
+    position: relative;
+  }
+
+  .container {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: 550px) {
+    .container {
+      @include vhcenter();
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
   }
 
   .olson {
-    height: 50vh;
     background: image-url('bg/olson.jpg') center center / cover;
+    min-height: 333px;
+
+    @media (min-width: 550px) {
+      height: 50vh;
+    }
 
     .quotor {
-      color: $tealAlt;
+      margin-bottom: 20px;
+
+      @media (min-width: 550px) {
+        margin-bottom: 0px;
+      }
+
+      span {
+        background-color: $tealAlt;
+        color: $white;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
     }
   }
 
   .huang {
-    height: 50vh;
     background: image-url('bg/huang.jpg') center center / cover;
+    min-height: 333px;
+
+    @media (min-width: 550px) {
+      height: 50vh;
+    }
 
     .quotor {
       text-align: right;
-      color: $greenAlt;
+      margin-top: 20px;
+
+      @media (min-width: 550px) {
+        margin-top: 0px;
+      }
+
+      span {
+        background-color: $greenAlt;
+        color: $white;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
     }
   }
 
@@ -303,16 +451,24 @@ nav.primary {
   background: image-url('bg/join.jpg') center center / cover;
   text-align: center;
 
-  .container {
-    @extend .vhcenter;
+  @media (min-width: 550px) {
+    .container {
+      @include vhcenter();
+    }
   }
 
   h1 {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    margin-top: 150px;
+
+    @media (min-width: 550px) {
+      margin-bottom: 80px;
+      margin-top: 0px;
+    }
   }
 
-  .company {
-    margin-right: 40px;
+  .company, .talent {
+    margin: 10px;
   }
 
   .talent {
@@ -320,22 +476,32 @@ nav.primary {
   }
 
   .footer {
+    height: 200px;
     width: 100%;
-    height: 150px;
     position: absolute;
     bottom: 0;
+
+    @media (min-width: 550px) {
+      height: 150px;
+    }
 
     a {
       color: $pastelGreenAlt;
       opacity: 0.5;
-      font: 18px/25px avenir;
+      font: 14px/20px avenir;
       letter-spacing: 5px;
       text-transform: uppercase;
       text-decoration: none;
+      margin-bottom: 10px;
+      display: inline-block;
+
+      @media (min-width: 550px) {
+        font: 18px/25px avenir;
+      }
     }
 
     .copyright {
-      margin-top: 50px;
+      margin-top: 40px;
       font: 8px/10px idlewild;
       color: $white;
       opacity: 0.5;
