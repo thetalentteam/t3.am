@@ -119,8 +119,6 @@ hr {
 
 .box {
   margin-bottom: 33px;
-
-  
 }
 
 @mixin vhcenter() {
@@ -208,8 +206,35 @@ nav.primary {
 
 }
 
-.hero, .global, .clients, .aligned-incentives, .technology-enabled, .iaas,
-.talent-engagement, .studio, .assessment-tools, .testimonials, .join {
+ul.paging {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  right: 20px;
+  list-style-type: none;
+
+  @media (min-width: 1210px) {
+    right: 48px;
+  }
+
+  li {
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: $brownAlt;
+    border-width: 1px;
+    border-style: solid;
+    width: 8px;
+    height: 8px;
+
+    &.active {
+      background-color: $brownAlt;
+    }
+  }
+}
+
+div.hero, div.global, div.clients, div.aligned-incentives, div.technology-enabled, div.iaas,
+div.talent-engagement, div.studio, div.assessment-tools, div.testimonials, div.join {
   position: relative;
   min-height: 667px;
 
@@ -218,7 +243,7 @@ nav.primary {
   }
 }
 
-.hero {
+div.hero {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.20) 60%, rgba(0, 0, 0, 0.65) 100%), image-url('bg/hero.jpg') center center / cover;
   background-color: $black;
   text-align: center;
@@ -245,7 +270,7 @@ nav.primary {
 
 }
 
-.global {
+div.global {
   background: image-url('bg/global.jpg') center center / cover;
   overflow: hidden;
 
@@ -284,7 +309,7 @@ nav.primary {
 
 }
 
-.clients {
+div.clients {
   background: image-url('bg/clients.jpg') center center / cover;
   text-align: center;
   color: $white;
@@ -339,7 +364,7 @@ nav.primary {
   }
 }
 
-.aligned-incentives {
+div.aligned-incentives {
   background: image-url('bg/aligned-incentives.jpg') center center / cover;
   color: $white;
 
@@ -348,7 +373,7 @@ nav.primary {
   }
 }
 
-.technology-enabled {
+div.technology-enabled {
   background: image-url('bg/technology-enabled.jpg') center center / cover;
   color: $white;
 
@@ -361,7 +386,7 @@ nav.primary {
   }
 }
 
-.iaas {
+div.iaas {
   background: image-url('bg/iaas.jpg') center center / cover;
   color: $black;
 
@@ -374,7 +399,7 @@ nav.primary {
   }
 }
 
-.talent-engagement {
+div.talent-engagement {
   background: image-url('bg/talent-engagement.jpg') center center / cover;
   color: $white;
 
@@ -387,7 +412,7 @@ nav.primary {
   }
 }
 
-.studio {
+div.studio {
   background: image-url('bg/studio.jpg') center center / cover;
   color: $black;
 
@@ -396,7 +421,7 @@ nav.primary {
   }
 }
 
-.assessment-tools {
+div.assessment-tools {
   background: image-url('bg/assessment-tools.jpg') center center / cover;
   color: $white;
 
@@ -405,7 +430,7 @@ nav.primary {
   }
 }
 
-.testimonials {
+div.testimonials {
   min-height: 0;
 
   .quotor {
@@ -501,7 +526,7 @@ nav.primary {
 
 }
 
-.join {
+div.join {
   background: image-url('bg/join.jpg') center center / cover;
   text-align: center;
 

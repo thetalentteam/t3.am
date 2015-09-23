@@ -8,11 +8,11 @@
     <title><%= current_page.data.title || "T3" %></title>
 
     <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
-  </head>
+      </head>
 
   <body class="<%= page_classes %>">
     <%= yield %>
+    <%= javascript_include_tag "all" %>
   </body>
 </html>
 
