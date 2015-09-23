@@ -150,6 +150,60 @@ nav.primary {
     width: 60px;
     height: 60px;
     background: image-url('logo.svg') no-repeat center center;
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style-type: none;
+    text-align: right;
+
+    li {
+      margin: 0px 0px 0px 48px;
+
+      @media (min-width: 500px) {
+        display: inline-block;
+        margin-top: 19px;
+      }
+
+      &.language {
+        margin-bottom: 10px;
+
+        @media (min-width: 500px) {
+          margin-bottom: 0px;
+        }
+
+        a:before {
+          content: "";
+          display: inline-block;
+          position: relative;
+          top: 4px;
+          left: -10px;
+          width: 16px;
+          height: 20px;
+          background: image-url("globe.svg") no-repeat center center;
+        }
+
+        a:after{
+          content: "";
+          display: inline-block;
+          position: relative;
+          top: -3px;
+          width: 7px;
+          height: 4px;
+          background: image-url("select-arrow.svg") no-repeat center center;
+          margin-left: 6px;
+        }
+      }
+
+      a {
+        font: 16px/22px avenir;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white;
+      }
+    }
   }
 
 }
