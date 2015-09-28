@@ -28,3 +28,7 @@ Middleman).
 
     middleman build
 
+## Deploy
+
+    middleman deploy
+
