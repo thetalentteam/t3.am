@@ -157,11 +157,10 @@ nav.primary {
     text-align: right;
 
     li {
-      margin: 0px 0px 0px 48px;
+      margin: 19px 0px 0px 48px;
 
       @media (min-width: 500px) {
         display: inline-block;
-        margin-top: 19px;
       }
 
       &.language {
