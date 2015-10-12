@@ -10,7 +10,6 @@ $.each(section_identifiers, function(index, value) {
       if (direction === 'down') {
         $('.paging li').removeClass('active');
         $('.paging li.'+value).addClass('active');
-        console.log('down triggered');
       }
     }
   })
@@ -21,7 +20,6 @@ $.each(section_identifiers, function(index, value) {
       if (direction === 'up') {
         $('.paging li').removeClass('active');
         $('.paging li.'+value).addClass('active');
-        console.log('up triggered');
       }
     },
     offset: '-99%'
