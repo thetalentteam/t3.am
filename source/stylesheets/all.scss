@@ -248,9 +248,14 @@ div.hero {
   text-align: center;
 
   h1 {
+    font: 40px/60px walsheim;
     background-color: $blue;
     display: inline-block;
     padding: 10px 20px 22px 20px;
+
+    @media (min-width: 800px) and (min-height: 667px) {
+      font: 60px/80px walsheim;
+    }
   }
 
   p {
@@ -258,13 +263,20 @@ div.hero {
     color: $white;
     margin: 75px 0px 0px 0px;
 
-    @media (min-width: 550px) and (min-height: 667px)  {
+    @media (min-width: 800px) and (min-height: 667px)  {
       font: 48px/60px walsheim;
     }
   }
 
-  .container {
+  .container.heading {
     @include vhcenter();
+  }
+
+  .container.sub {
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
 }
