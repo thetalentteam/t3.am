@@ -74,5 +74,6 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.build_before = true
+  deploy.remote = 'git@github.com:thetalentteam/t3.am.git'
 end
 
