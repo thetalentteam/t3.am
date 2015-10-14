@@ -1,6 +1,6 @@
 //= require_tree .
 
-var section_identifiers = ['hero', 'global', 'clients', 'aligned-incentives', 'technology-enabled', 'iaas', 'talent-engagement', 'studio', 'assessment-tools', 'testimonials', 'join'];
+var section_identifiers = ['hero', 'global', 'clients', 'technology-enabled', 'iaas', 'talent-engagement', 'studio', 'assessment-tools', 'testimonials', 'join'];
 
 $.each(section_identifiers, function(index, value) {
 
