@@ -1,0 +1,1435 @@
+@charset "UTF-8";
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 12, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 50, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 74, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 108, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 116, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 124, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 133, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 141, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 151, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 163, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 173, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 181, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 189, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 197, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 201, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 213, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 221, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 233, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 245, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 256, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 267, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 281, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 294, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 306, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 316, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 328, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 340, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 349, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 360, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 373, /Users/geraldfong/workspace/t3.am/source/stylesheets/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 32, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+/* line 39, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  /* line 58, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .column,
+  .columns {
+    margin-left: 4%; }
+
+  /* line 61, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  /* line 65, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .one.column,
+  .one.columns {
+    width: 4.66666666667%; }
+
+  /* line 67, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .two.columns {
+    width: 13.3333333333%; }
+
+  /* line 68, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .three.columns {
+    width: 22%; }
+
+  /* line 69, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .four.columns {
+    width: 30.6666666667%; }
+
+  /* line 70, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .five.columns {
+    width: 39.3333333333%; }
+
+  /* line 71, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .six.columns {
+    width: 48%; }
+
+  /* line 72, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .seven.columns {
+    width: 56.6666666667%; }
+
+  /* line 73, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .eight.columns {
+    width: 65.3333333333%; }
+
+  /* line 74, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .nine.columns {
+    width: 74.0%; }
+
+  /* line 75, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .ten.columns {
+    width: 82.6666666667%; }
+
+  /* line 76, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .eleven.columns {
+    width: 91.3333333333%; }
+
+  /* line 77, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0; }
+
+  /* line 79, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .one-third.column {
+    width: 30.6666666667%; }
+
+  /* line 80, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .two-thirds.column {
+    width: 65.3333333333%; }
+
+  /* line 82, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .one-half.column {
+    width: 48%; }
+
+  /* Offsets */
+  /* line 85, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-one.column,
+  .offset-by-one.columns {
+    margin-left: 8.66666666667%; }
+
+  /* line 87, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-two.column,
+  .offset-by-two.columns {
+    margin-left: 17.3333333333%; }
+
+  /* line 89, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-three.column,
+  .offset-by-three.columns {
+    margin-left: 26%; }
+
+  /* line 91, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-four.column,
+  .offset-by-four.columns {
+    margin-left: 34.6666666667%; }
+
+  /* line 93, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-five.column,
+  .offset-by-five.columns {
+    margin-left: 43.3333333333%; }
+
+  /* line 95, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-six.column,
+  .offset-by-six.columns {
+    margin-left: 52%; }
+
+  /* line 97, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-seven.column,
+  .offset-by-seven.columns {
+    margin-left: 60.6666666667%; }
+
+  /* line 99, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-eight.column,
+  .offset-by-eight.columns {
+    margin-left: 69.3333333333%; }
+
+  /* line 101, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-nine.column,
+  .offset-by-nine.columns {
+    margin-left: 78.0%; }
+
+  /* line 103, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-ten.column,
+  .offset-by-ten.columns {
+    margin-left: 86.6666666667%; }
+
+  /* line 105, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns {
+    margin-left: 95.3333333333%; }
+
+  /* line 108, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns {
+    margin-left: 34.6666666667%; }
+
+  /* line 110, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns {
+    margin-left: 69.3333333333%; }
+
+  /* line 113, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns {
+    margin-left: 52%; } }
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+/* line 124, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 126, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 136, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+
+/* line 140, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem; }
+
+/* line 141, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem; }
+
+/* line 142, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem; }
+
+/* line 143, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem; }
+
+/* line 144, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem; }
+
+/* line 145, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  /* line 149, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  h1 {
+    font-size: 5.0rem; }
+
+  /* line 150, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  h2 {
+    font-size: 4.2rem; }
+
+  /* line 151, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  h3 {
+    font-size: 3.6rem; }
+
+  /* line 152, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  h4 {
+    font-size: 3.0rem; }
+
+  /* line 153, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  h5 {
+    font-size: 2.4rem; }
+
+  /* line 154, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+  h6 {
+    font-size: 1.5rem; } }
+/* line 157, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+p {
+  margin-top: 0; }
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 163, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+a {
+  color: #1EAEDB; }
+
+/* line 165, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+a:hover {
+  color: #0FA0CE; }
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 171, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+/* line 193, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+
+/* line 206, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+
+/* line 214, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 231, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+/* Removes awkward default styles on some inputs for iOS */
+/* line 248, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* line 259, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+/* line 263, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+
+/* line 274, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+
+/* line 279, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+fieldset {
+  padding: 0;
+  border-width: 0; }
+
+/* line 282, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+
+/* line 285, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 293, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+ul {
+  list-style: circle inside; }
+
+/* line 295, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+ol {
+  list-style: decimal inside; }
+
+/* line 297, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+
+/* line 300, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+
+/* line 306, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+li {
+  margin-bottom: 1rem; }
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 312, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+
+/* line 320, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 328, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+
+/* line 333, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+
+/* line 336, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 343, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+button,
+.button {
+  margin-bottom: 1rem; }
+
+/* line 346, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+
+/* line 351, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem; }
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 365, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* line 368, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* line 371, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.u-pull-right {
+  float: right; }
+
+/* line 373, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.u-pull-left {
+  float: left; }
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 379, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Self Clearing Goodness */
+/* line 390, /Users/geraldfong/workspace/t3.am/source/stylesheets/_skeleton.scss */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+/* Larger than mobile */
+/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/AvenirLTStd-Medium.woff") format("woff"); }
+@font-face {
+  font-family: engravers;
+  src: url("../fonts/EngravrsRomanBdBT-Bold.woff") format("woff");
+  font-weight: 700; }
+@font-face {
+  font-family: walsheim;
+  src: url("../fonts/GTWalsheim-Medium.woff") format("woff"); }
+@font-face {
+  font-family: idlewild;
+  src: url("../fonts/Idlewild-Medium.woff") format("woff"); }
+/* line 49, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+h1 {
+  font: 40px/60px walsheim;
+  color: white; }
+  @media (min-width: 550px) and (min-height: 667px) {
+    /* line 49, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    h1 {
+      font: 60px/80px walsheim; } }
+
+/* line 58, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+h2 {
+  font: 27px/40px engravers;
+  text-transform: lowercase;
+  text-align: center;
+  letter-spacing: 10px;
+  margin-top: 100px;
+  margin-left: 18px; }
+  @media (min-width: 550px) and (min-height: 667px) {
+    /* line 58, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    h2 {
+      font: 48px/50px engravers;
+      letter-spacing: 20px; } }
+
+/* line 72, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+hr {
+  width: 240px;
+  height: 20px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  border: none;
+  background-color: #d6a783; }
+
+/* line 81, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+.jumbo {
+  font: 21px/30px walsheim;
+  margin-top: 33px;
+  margin-bottom: 33px;
+  text-align: center; }
+  @media (min-width: 667px) {
+    /* line 81, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    .jumbo {
+      text-align: justify; } }
+  @media (min-width: 380px) {
+    /* line 81, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    .jumbo {
+      font: 27px/40px walsheim; } }
+  @media (min-width: 900px) and (min-height: 720px) {
+    /* line 81, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    .jumbo {
+      font: 48px/60px walsheim; } }
+
+/* line 100, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+.button {
+  font: 27px/40px walsheim;
+  width: 240px;
+  height: 40px;
+  border-radius: 40px;
+  color: #0c0c0e;
+  background-color: #ffca04;
+  border: none;
+  text-transform: none;
+  text-align: center;
+  letter-spacing: -1px; }
+  @media (min-width: 550px) and (min-height: 667px) {
+    /* line 100, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    .button {
+      font: 48px/80px walsheim;
+      letter-spacing: -3px;
+      width: 380px;
+      height: 80px; } }
+
+/* line 120, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+.box {
+  margin-bottom: 33px; }
+
+/* line 137, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+.vcenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+/* line 141, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+nav.primary {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  margin-top: 40px; }
+  /* line 147, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  nav.primary .logo {
+    width: 60px;
+    height: 60px;
+    background: url("../images/logo.svg") no-repeat center center;
+    float: left; }
+  /* line 154, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  nav.primary ul {
+    float: right;
+    list-style-type: none;
+    text-align: right; }
+    /* line 159, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    nav.primary ul li {
+      margin: 19px 0px 0px 48px; }
+      @media (min-width: 500px) {
+        /* line 159, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+        nav.primary ul li {
+          display: inline-block; } }
+      /* line 166, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      nav.primary ul li.language {
+        margin-bottom: 10px; }
+        @media (min-width: 500px) {
+          /* line 166, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+          nav.primary ul li.language {
+            margin-bottom: 0px; } }
+        /* line 173, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+        nav.primary ul li.language a:before {
+          content: "";
+          display: inline-block;
+          position: relative;
+          top: 4px;
+          left: -10px;
+          width: 16px;
+          height: 20px;
+          background: url("../images/globe.svg") no-repeat center center; }
+        /* line 184, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+        nav.primary ul li.language a:after {
+          content: "";
+          display: inline-block;
+          position: relative;
+          top: -3px;
+          width: 7px;
+          height: 4px;
+          background: url("../images/select-arrow.svg") no-repeat center center;
+          margin-left: 6px; }
+      /* line 196, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      nav.primary ul li a {
+        font: 16px/22px avenir;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white; }
+
+/* line 208, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+ul.paging {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  right: 20px;
+  list-style-type: none; }
+  @media (min-width: 1210px) {
+    /* line 208, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    ul.paging {
+      right: 48px; } }
+  /* line 220, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  ul.paging li {
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: #888078;
+    border-width: 1px;
+    border-style: solid;
+    width: 8px;
+    height: 8px; }
+    /* line 229, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    ul.paging li.active {
+      background-color: #888078; }
+
+/* line 235, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.hero, div.global, div.clients, div.aligned-incentives, div.technology-enabled, div.iaas,
+div.talent-engagement, div.studio, div.assessment-tools, div.testimonials, div.join {
+  position: relative;
+  min-height: 667px; }
+  @media (min-width: 667px) {
+    /* line 235, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.hero, div.global, div.clients, div.aligned-incentives, div.technology-enabled, div.iaas,
+    div.talent-engagement, div.studio, div.assessment-tools, div.testimonials, div.join {
+      height: 100vh; } }
+
+/* line 245, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.hero {
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.65) 100%), url("../images/bg/hero.jpg") center center/cover;
+  background-color: #0c0c0e;
+  text-align: center; }
+  /* line 250, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.hero h1 {
+    font: 40px/60px walsheim;
+    background-color: #1c6aa2;
+    display: inline-block;
+    padding: 10px 20px 22px 20px; }
+    @media (min-width: 800px) and (min-height: 667px) {
+      /* line 250, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.hero h1 {
+        font: 60px/80px walsheim; } }
+  /* line 261, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.hero p {
+    font: 27px/40px walsheim;
+    color: white;
+    margin: 75px 0px 0px 0px; }
+    @media (min-width: 800px) and (min-height: 667px) {
+      /* line 261, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.hero p {
+        font: 48px/60px walsheim; } }
+  /* line 271, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.hero .container.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  /* line 275, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.hero .container.sub {
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+/* line 284, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.global {
+  background: url("../images/bg/global.jpg") center center/cover;
+  overflow: hidden; }
+  /* line 288, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.global .countries ul li {
+    display: none;
+    font: 27px/40px engravers;
+    text-align: right;
+    list-style-type: none;
+    opacity: 0.3; }
+    @media (min-width: 550px) {
+      /* line 288, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.global .countries ul li {
+        opacity: 1.0;
+        display: block; } }
+    @media (min-height: 800px) {
+      /* line 288, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.global .countries ul li {
+        font: 36px/60px engravers; } }
+  /* line 305, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.global .jumbo {
+    font: 40px/60px walsheim;
+    color: #197396;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+    @media (min-width: 667px) {
+      /* line 305, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.global .jumbo {
+        font: 60px/80px walsheim; } }
+  /* line 317, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.global .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/* line 323, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.clients {
+  background: url("../images/bg/clients.jpg") center center/cover;
+  text-align: center;
+  color: white; }
+  /* line 328, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.clients .client-grid {
+    width: 100%;
+    font: 10px/25px idlewild; }
+    /* line 329, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.clients .client-grid:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 338, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.clients .client-grid .first.row {
+      margin-bottom: 0px; }
+    /* line 342, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.clients .client-grid .second.row {
+      margin-top: 0px; }
+    @media (min-width: 550px) {
+      /* line 328, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.clients .client-grid {
+        position: absolute;
+        bottom: 0; }
+        /* line 350, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+        div.clients .client-grid .first.row {
+          margin-bottom: 17px; }
+        /* line 353, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+        div.clients .client-grid .second.row {
+          margin-top: 22px; } }
+    @media (min-width: 820px) {
+      /* line 328, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.clients .client-grid {
+        font: 14px/30px idlewild; } }
+    @media (min-width: 1000px) {
+      /* line 328, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.clients .client-grid {
+        font: 18px/40px idlewild; } }
+    /* line 366, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.clients .client-grid .box {
+      border: 8px solid #6c6d6d;
+      margin: 48px; }
+    /* line 371, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.clients .client-grid .row {
+      margin-top: 22px;
+      margin-bottom: 17px; }
+
+/* line 378, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.aligned-incentives {
+  background: url("../images/bg/aligned-incentives.jpg") center center/cover;
+  color: white; }
+  /* line 382, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.aligned-incentives hr {
+    background-color: #0c0c0e; }
+
+/* line 387, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.technology-enabled {
+  background: url("../images/bg/technology-enabled.jpg") center center/cover;
+  color: white; }
+  /* line 391, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.technology-enabled hr {
+    background-color: #197396; }
+  /* line 395, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.technology-enabled .box {
+    background-color: rgba(0, 13, 31, 0.7); }
+
+/* line 400, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.iaas {
+  background: url("../images/bg/iaas.jpg") center center/cover;
+  color: #0c0c0e; }
+  /* line 404, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.iaas hr {
+    background-color: #ffca04; }
+  /* line 408, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.iaas .box {
+    background: url("../images/patterns/waves.png") center center/cover; }
+
+/* line 413, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.talent-engagement {
+  background: url("../images/bg/talent-engagement.jpg") center center/cover;
+  color: white; }
+  /* line 417, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.talent-engagement hr {
+    background-color: #45cc9c; }
+  /* line 421, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.talent-engagement .box {
+    background-color: rgba(0, 81, 58, 0.7); }
+
+/* line 426, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.studio {
+  background: url("../images/bg/studio.jpg") center center/cover;
+  color: #0c0c0e; }
+  /* line 430, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.studio hr {
+    background-color: #4dbcd0; }
+
+/* line 435, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.assessment-tools {
+  background: url("../images/bg/assessment-tools.jpg") center center/cover;
+  color: white; }
+  /* line 439, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.assessment-tools hr {
+    background-color: #45cc9c; }
+
+/* line 444, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.testimonials {
+  min-height: 0; }
+  /* line 447, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.testimonials .quotor {
+    font: 21px/30px walsheim; }
+    @media (min-width: 667px) {
+      /* line 447, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.testimonials .quotor {
+        font: 27px/35px walsheim; } }
+    @media (min-width: 900px) and (min-height: 720px) {
+      /* line 447, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.testimonials .quotor {
+        font: 36px/40px walsheim; } }
+  /* line 459, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.testimonials .quote {
+    font: 27px/40px walsheim;
+    color: white; }
+    @media (min-width: 800px) {
+      /* line 459, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.testimonials .quote {
+        font: 40px/60px walsheim; } }
+    @media (min-width: 900px) and (min-height: 720px) {
+      /* line 459, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.testimonials .quote {
+        font: 50px/75px walsheim; } }
+  /* line 472, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.testimonials .olson, div.testimonials .huang {
+    position: relative; }
+  /* line 476, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.testimonials .container {
+    padding-top: 33px;
+    padding-bottom: 33px; }
+  @media (min-width: 550px) {
+    /* line 482, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.testimonials .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding-top: 0px;
+      padding-bottom: 0px; } }
+  /* line 489, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.testimonials .olson {
+    background: url("../images/bg/olson.jpg") center center/cover;
+    min-height: 333px; }
+    @media (min-width: 550px) {
+      /* line 489, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.testimonials .olson {
+        height: 50vh; } }
+    /* line 497, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.testimonials .olson .quotor {
+      margin-bottom: 20px; }
+      @media (min-width: 550px) {
+        /* line 497, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+        div.testimonials .olson .quotor {
+          margin-bottom: 0px; } }
+      /* line 504, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.testimonials .olson .quotor span {
+        background-color: #4dbcd0;
+        color: white;
+        display: inline-block;
+        margin-bottom: 5px; }
+  /* line 513, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.testimonials .huang {
+    background: url("../images/bg/huang.jpg") center center/cover;
+    min-height: 333px; }
+    @media (min-width: 550px) {
+      /* line 513, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.testimonials .huang {
+        height: 50vh; } }
+    /* line 521, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.testimonials .huang .quotor {
+      text-align: right;
+      margin-top: 20px; }
+      @media (min-width: 550px) {
+        /* line 521, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+        div.testimonials .huang .quotor {
+          margin-top: 0px; } }
+      /* line 529, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.testimonials .huang .quotor span {
+        background-color: #45cc9c;
+        color: white;
+        display: inline-block;
+        margin-bottom: 5px; }
+
+/* line 540, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+div.join {
+  background: url("../images/bg/join.jpg") center center/cover;
+  text-align: center; }
+  @media (min-width: 550px) {
+    /* line 545, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.join .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+  /* line 550, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.join h1 {
+    margin-bottom: 40px;
+    margin-top: 150px; }
+    @media (min-width: 550px) {
+      /* line 550, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.join h1 {
+        margin-bottom: 80px;
+        margin-top: 0px; } }
+  /* line 560, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.join .company, div.join .talent {
+    margin: 10px; }
+  /* line 564, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.join .talent {
+    background-color: #45cc9c; }
+  /* line 568, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+  div.join .footer {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+    @media (min-width: 550px) {
+      /* line 568, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+      div.join .footer {
+        height: 150px; } }
+    /* line 578, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.join .footer a {
+      color: #dbebea;
+      opacity: 0.5;
+      font: 14px/20px avenir;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: inline-block; }
+      @media (min-width: 550px) {
+        /* line 578, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+        div.join .footer a {
+          font: 18px/25px avenir; } }
+    /* line 593, /Users/geraldfong/workspace/t3.am/source/stylesheets/all.scss */
+    div.join .footer .copyright {
+      margin-top: 40px;
+      font: 8px/10px idlewild;
+      color: white;
+      opacity: 0.5; }
